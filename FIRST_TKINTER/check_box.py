@@ -1,0 +1,15 @@
+from tkinter import *
+window=Tk()
+window.title("ALTIER")
+window.geometry("500x600")
+
+check_1=IntVar()
+check_2=IntVar()
+check_3=IntVar()
+ck_button_1=Checkbutton(window,text="BANZ",onvalue=1,offvalue=0,height=2,width=12)
+ck_button_2=Checkbutton(window,text="BMW",onvalue=1,offvalue=0,height=2,width=12)
+ck_button_3=Checkbutton(window,text="RR",onvalue=1,offvalue=0,height=2,width=12)
+ck_button_1.pack()
+ck_button_2.pack()
+ck_button_3.pack()
+window.mainloop()

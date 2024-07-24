@@ -1,0 +1,1 @@
+btn=Button(window,text="OK",bg="black",fg="red",command=)

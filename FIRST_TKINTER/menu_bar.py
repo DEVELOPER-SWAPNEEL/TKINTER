@@ -1,0 +1,21 @@
+from tkinter import *
+window = Tk()
+window.title("ALtier")
+window.geometry("500x600")
+menu_ = Menu(window)
+#here the tearoff is used to either make the menu floting or stable.. as when tearoff=0 it is stable , when tearoff=1 it is floating
+file_ = Menu(menu_, tearoff=0)
+file_.add_command(label="NEW")
+file_.add_command(label="OPEN")
+file_.add_command(label="FOLDER")
+file_.add_command(label="SAVE")
+file_.add_command(label="SAVE AS")
+file_.add_separator()
+file_.add_command(label="FIND")
+file_.add_command(label="CLOSE")
+file_.add_separator()
+file_.add_command(label="EXIT",background="red",foreground="black",command=window.quit)
+
+menu_.add_cascade(label="File",menu=file_)
+window.config(menu=menu_)
+window.mainloop()
